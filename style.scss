@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+$transition-time: 2.3s;
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+	background-image: url('https://sneakerfreak.ru/wp-content/uploads/2020/03/just-do-it-1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+	section{
+		width: 100%;
+		max-width: 1200px;
+    margin: 0 auto;
+
+		.container-card{
+      display: flex;
+      gap: 20px;
+			align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+}
+.card{
+	position: relative;
+	height: 450px;
+	width: 360px;
+	transition: ease all $transition-time;
+	perspective: 1200px;
+	&:hover{
+		.cover{
+			transform: rotateX(0deg) rotateY(-180deg);
+			&:before{
+				transform: translateZ(30px);
+			}
+			&:after{
+				background-color: black;
+			}
+
+			.heading-card {
+				transform: translateZ(100px);
+        &__description{
+          transform: translateZ(100px);
+        }
+			}
+      .image-logo {
+        transform: translateZ(60px)
+      }
+
+			.price{
+				transform: translateZ(60px);
+			}
+			a{
+				transform: translateZ(-60px) rotatey(-180deg);
+			}
+		}
+	}
+	
+	.cover {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform-style: preserve-3d;
+  	transition: ease all $transition-time;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		&:before{
+			content: '';
+			position: absolute;
+			box-shadow: 0 0 12px rgba(0,0,0,.3); 
+			top:10px;
+			left:10px;
+			right:10px;
+			bottom:10px;
+			z-index: 2;
+			transition: ease all $transition-time;
+			transform-style: preserve-3d;
+			transform: translateZ(0px);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index: 2;
+			transition: ease all 1.3s;
+			background: rgba(0,0,0,.4);
+		}
+
+		&.item-a{
+			background-image: url('https://cdn.sanity.io/images/c1chvb1i/production/972413ed689e37d354f9b5db56f85a3a48b11ced-640x426.jpg/NIKE-AIR-MAX-90-GS-COLOUR-PACK-8.jpg?fm=webp');
+  
+      .heading-card{
+        color: rgba(0, 157, 255, 0.9);
+      }
+      &::before{
+        border: 4px solid rgba(0, 157, 255, 0.9);
+      }
+      span {
+        color: rgb(0, 157, 255, 0.9);
+      }
+      a {
+        color: rgba(0, 157, 255, 0.9);
+        border: 2px solid rgba(0, 157, 255, 0.9);
+        &:hover {
+          color: #0b0f08;
+          background: rgba(0, 157, 255, 0.9);
+        }
+      }
+		}		
+
+    &.item-b{
+			background-image: url('https://i.pinimg.com/564x/9e/07/e5/9e07e5ba1b665b0cfba8cc9c1e295c8e.jpg');
+
+      .heading-card{
+        color: rgba(106, 0, 255, 1);
+      }
+      &::before{
+        border: 4px solid rgba(106, 0, 255, 0.9);
+      }
+      span {
+        color: rgba(106, 0, 255, 1);
+      }
+      a {
+        color: rgba(106, 0, 255, 0.9);
+        border: 2px solid rgba(106, 0, 255, 0.9);
+        &:hover {
+          color: #0b0f08;
+          background: rgba(106, 0, 255, 0.9);
+        }
+      }
+		}    
+
+    &.item-c{
+			background-image: url('https://i.pinimg.com/564x/99/b8/6e/99b86ec2e99a30ff0378410554f6ad76.jpg');
+      .heading-card{
+        color: rgba(255, 230, 0, 0.9);
+      }
+      &::before{
+        border: 4px solid rgba(255, 230, 0, 0.9);
+      }
+      span {
+        color: rgba(255, 230, 0, 0.9);
+      }
+      a {
+        color: rgba(255, 230, 0, 0.9);
+        border: 2px solid rgba(255, 230, 0, 0.9);
+        &:hover {
+          color: #0b0f08;
+          background: rgba(255, 230, 0, 0.9);
+        }
+      }
+		}
+
+		.heading-card {
+      text-shadow: 3px 3px 3px black, 3px 3px 1em black, 3px 3px 0.5em black;
+			font-weight: 400;
+			position: absolute;
+      padding: 10px 0 5px 20px;
+			bottom: 0;
+      left: 0;
+			transform-style: preserve-3d;
+  		transition: ease all $transition-time;
+			z-index: 4;
+			font-size: 1.5rem;
+			transform: translateZ(0px);
+      &__description {
+        font-size: 1.3rem;
+      }
+		}
+
+		.price {
+			font-weight: 300;
+			position: absolute;
+			top: 35px;
+			right: 25px;
+			transform-style: preserve-3d;
+  		transition: ease all $transition-time;
+			z-index: 4;
+			font-size: 1.5rem;
+			transform: translateZ(0px);
+      text-shadow: 3px 3px 3px black, 3px 3px 1em black, 3px 3px 0.5em black;
+		}
+	}
+
+	.card-back{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: #0b0f08;
+		transform-style: preserve-3d;
+  	transition: ease all $transition-time;
+		transform: translateZ(-1px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    gap: 10px;
+
+		&__link{
+			transform-style: preserve-3d;
+			transition: ease transform $transition-time, ease background .5s;
+			transform: translateZ(-1px) rotatey(-180deg);
+			background: transparent;
+			font-weight: 500;
+			font-size: 1rem;
+      opacity: .9;
+			padding: 14px 30px;
+			outline: none;
+			text-decoration: none;
+			&:hover{
+        font-weight: bold;
+        opacity: .9;
+        color: #0b0f08;
+			}
+		}
+	}
+}
+
