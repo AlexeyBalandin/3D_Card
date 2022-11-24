@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-$transition-time: 2.3s;
+$transition-time: 3.5s;
 
 body{
 	font-family: 'Josefin Sans', sans-serif;
@@ -21,6 +21,10 @@ body{
 			align-items: center;
       justify-content: center;
       height: 100vh;
+
+      @media (max-width: 787px) {
+        gap: ;
+      }
     }
   }
 }
