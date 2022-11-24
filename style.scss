@@ -3,9 +3,10 @@
 $transition-time: 3.5s;
 
 body{
+	background: #0b0f08;
 	font-family: 'Josefin Sans', sans-serif;
-  font-style: italic;
-	background-image: url('https://sneakerfreak.ru/wp-content/uploads/2020/03/just-do-it-1.jpg');
+	background-image: url('https://i.pinimg.com/originals/31/ad/7b/31ad7b205b349d6f8cf779069967df6f.jpg');
+	overflow-y: hidden;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,10 +22,6 @@ body{
 			align-items: center;
       justify-content: center;
       height: 100vh;
-
-      @media (max-width: 787px) {
-        gap: ;
-      }
     }
   }
 }
@@ -98,7 +95,7 @@ body{
 		}
 
 		&.item-a{
-			background-image: url('https://cdn.sanity.io/images/c1chvb1i/production/972413ed689e37d354f9b5db56f85a3a48b11ced-640x426.jpg/NIKE-AIR-MAX-90-GS-COLOUR-PACK-8.jpg?fm=webp');
+			background-image: url('https://i.pinimg.com/originals/d4/fb/9a/d4fb9acd5299fbb648e8fb80589560b4.jpg');
   
       .heading-card{
         color: rgba(0, 157, 255, 0.9);
