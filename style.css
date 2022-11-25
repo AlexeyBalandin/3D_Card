@@ -43,9 +43,6 @@ body section .container-card {
 .card:hover .cover .heading-card__description {
   transform: translateZ(100px);
 }
-.card:hover .cover .image-logo {
-  transform: translateZ(60px);
-}
 .card:hover .cover .price {
   transform: translateZ(60px);
 }
@@ -87,7 +84,7 @@ body section .container-card {
   background: rgba(0, 0, 0, 0.4);
 }
 .card .cover.item-a {
-  background-image: url("https://i.pinimg.com/originals/d4/fb/9a/d4fb9acd5299fbb648e8fb80589560b4.jpg");
+  background-image: url("https://i.pinimg.com/564x/1f/ce/b3/1fceb3b5e96ec03324ba6b090a535c74.jpg");
 }
 .card .cover.item-a .heading-card {
   color: rgba(0, 157, 255, 0.9);
@@ -107,7 +104,7 @@ body section .container-card {
   background: rgba(0, 157, 255, 0.9);
 }
 .card .cover.item-b {
-  background-image: url("https://i.pinimg.com/564x/9e/07/e5/9e07e5ba1b665b0cfba8cc9c1e295c8e.jpg");
+  background-image: url("https://i.pinimg.com/564x/4f/38/36/4f3836124b586a2a06b89c26456cd64e.jpg");
 }
 .card .cover.item-b .heading-card {
   color: rgb(106, 0, 255);
@@ -163,7 +160,7 @@ body section .container-card {
   font-size: 1.3rem;
 }
 .card .cover .price {
-  font-weight: 300;
+  font-weight: 400;
   position: absolute;
   top: 35px;
   right: 25px;
