@@ -139,24 +139,24 @@ body section .container-card {
   background: rgba(0, 157, 255, 0.9);
 }
 .card .cover.item-b {
-  background-image: url("https://i.pinimg.com/564x/4f/38/36/4f3836124b586a2a06b89c26456cd64e.jpg");
+  background-image: url("https://i.pinimg.com/564x/46/83/b2/4683b233b01fa08734d6173aa82a6feb.jpg");
 }
 .card .cover.item-b .heading-card {
-  color: rgb(106, 0, 255);
+  color: rgba(0, 255, 115, 0.9);
 }
 .card .cover.item-b::before {
-  border: 4px solid rgba(106, 0, 255, 0.9);
+  border: 4px solid rgba(0, 255, 115, 0.9);
 }
 .card .cover.item-b span {
-  color: rgb(106, 0, 255);
+  color: rgba(0, 255, 115, 0.9);
 }
 .card .cover.item-b a {
-  color: rgba(106, 0, 255, 0.9);
-  border: 2px solid rgba(106, 0, 255, 0.9);
+  color: rgba(0, 255, 115, 0.9);
+  border: 2px solid rgba(0, 255, 115, 0.9);
 }
 .card .cover.item-b a:hover {
   color: #0b0f08;
-  background: rgba(106, 0, 255, 0.9);
+  background: rgba(0, 255, 115, 0.9);
 }
 .card .cover.item-c {
   background-image: url("https://i.pinimg.com/564x/99/b8/6e/99b86ec2e99a30ff0378410554f6ad76.jpg");
