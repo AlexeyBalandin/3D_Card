@@ -15,18 +15,53 @@ body section {
 }
 body section .container-card {
   display: flex;
+  padding: 20px;
   gap: 20px;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+@media (320px <= width <= 720px) {
+  body section .container-card {
+    padding: 5px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (720px <= width <= 768px) {
+  body section .container-card {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+@media (769px <= width <= 997px) {
+  body section .container-card {
+    padding: 20px;
+    gap: 10px;
+  }
+}
 
 .card {
   position: relative;
   height: 450px;
-  width: 360px;
+  width: 100%;
   transition: ease all 3.5s;
   perspective: 1200px;
+}
+@media (720px <= width <= 768px) {
+  .card {
+    height: 350px;
+  }
+}
+@media (769px <= width <= 997px) {
+  .card {
+    height: 400px;
+  }
+}
+@media (998px <= width <= 1170px) {
+  .card {
+    height: 450px;
+  }
 }
 .card:hover .cover {
   transform: rotateX(0deg) rotateY(-180deg);
@@ -171,6 +206,11 @@ body section .container-card {
   transform: translateZ(0px);
   text-shadow: 3px 3px 3px black, 3px 3px 1em black, 3px 3px 0.5em black;
 }
+@media (320px <= width <= 768px) {
+  .card .cover .price {
+    font-size: 1.3rem;
+  }
+}
 .card .card-back {
   position: absolute;
   height: 100%;
@@ -184,6 +224,16 @@ body section .container-card {
   justify-content: center;
   gap: 10px;
 }
+@media (720px <= width <= 768px) {
+  .card .card-back {
+    flex-direction: column;
+  }
+}
+@media (769px <= width <= 869px) {
+  .card .card-back {
+    flex-direction: column;
+  }
+}
 .card .card-back__link {
   transform-style: preserve-3d;
   transition: ease transform 3.5s, ease background 0.5s;
@@ -195,6 +245,24 @@ body section .container-card {
   padding: 14px 30px;
   outline: none;
   text-decoration: none;
+}
+@media (320px <= width <= 720px) {
+  .card .card-back__link {
+    font-weight: 300;
+    padding: 5px 10px;
+  }
+}
+@media (720px <= width <= 768px) {
+  .card .card-back__link {
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+}
+@media (769px <= width <= 1100px) {
+  .card .card-back__link {
+    font-weight: 400;
+    padding: 10px 15px;
+  }
 }
 .card .card-back__link:hover {
   font-weight: bold;
